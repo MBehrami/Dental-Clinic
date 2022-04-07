@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/general.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="./https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <title>Ordinanca</title>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+<title>Ordinanca</title>
   </head>
   <body class="container">
       <header>
@@ -22,7 +24,7 @@
             <li><a class = "menu" href="#">Galeria</a></li>
             <li><a class = "menu" href="#">Sherbimet tona</a></li>
             <li><a class = "menu" href="#">Kontakti</a></li>
-            <li><a class = "menu reservation" href="http://127.0.0.1:5503/termin.html">Cakto termin</a></li>
+            <li><a class = "menu reservation reservation-first" href="http://127.0.0.1:5503/termin.html">Cakto termin</a></li>
           </ul>
 
         </div>
@@ -36,10 +38,14 @@
             Pacientët tanë mirëpriten me
             shërbime të shkëlqyera dentare në klinikën tonë.
           </p>
-          <a class="first-button">Më shumë</a>
+          <div class = "buton-header-div">
+            
+            <a class="first-button reservation-first">Cakto termin</a>
+            <a class="first-button">Më shumë</a>
+          </div>
         </div>
 
-        <img class="picture" src="images/First.svg" alt="header" />
+        <img class="picture" src="./images/First.svg" alt="header" />
       </article>
 
       <section>
@@ -53,7 +59,7 @@
         <div class="first-flex-services">
           <div class="estetik sherbimet">
             <img
-              src="svg/teeth.svg"
+              src="./svg/teeth.svg"
               class="first-flex-services-svg"
               alt="first"        
             />
@@ -131,33 +137,6 @@
           </div>
       </section>
 
-      <section>
-        <div class="consult">
-          <div class = "consult-text">
-            <h2>Terminet për konsultim me doktoret tanë</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nostrum.</p>
-            <span>038 222 221</span>
-          </div>
-          <div class = "consult-picture">
-            <img class = "consult-picture-consult" src="./Images/Consult.svg" alt="Konsultime">
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="consult">
-          <div class = "consult-picture test1">
-            <img class = "consult-picture-consult test" src="./Images/Teeth.svg" alt="Konsultime">
-          </div>
-          <div class = "consult-text test3">
-            <h2>Terminet për konsultim me doktoret tanë</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nostrum.</p>
-            <span>038 222 221</span>
-          </div>
-          
-        </div>
-      </section>
-
       <section class="second-section">
         <div class="gallery">
           <h2>Galeria</h2>
@@ -166,35 +145,56 @@
         <div class="gallery-back">
           <img
             class="picture2 pic"
-            src="images/pacient/pacient2.jpg"
+            src="./images/pacient/pacient2.jpg"
             alt="header"
           />
           <img
             class="picture3 pic"
-            src="images/pacient/pacient3.jpg"
+            src="./images/pacient/pacient3.jpg"
             alt="header"
           />
           <img
             class="picture4 pic"
-            src="images/pacient/pacient4.jpg"
+            src="./images/pacient/pacient4.jpg"
             alt="header"
           />
           <img
             class="picture5 pic"
-            src="images/pacient/pacient5.jpg"
+            src="./images/pacient/pacient5.jpg"
             alt="header"
           />
           <img
             class="picture6 pic"
-            src="images/pacient/pacient6.jpg"
+            src="./images/pacient/pacient6.jpg"
             alt="header"
           />
         </div>
       </section>
-      <hr />
+      
+
+     <section>
+       
+       <div class="calltoAction">
+         <div class = "calltoAction-text">
+           <h2>Njoftohu për zbritje</h2>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit dolores amet inventore consequatur, exercitationem quo.</p>
+           <div class =  "calltoAction-email">
+                  <input class = "calltoAction-email-email " type="email" placeholder="Email.." />
+            </div>
+            <a class = "reservation reservation-first calltoAction-button" href="#">Dërgo</a></li>
+           <p><ion-icon name="call-outline"></ion-icon>+383 49 400 400</p>
+          </div>
+         <div>
+           <img class = "calltoAction-img" src="./CallToAction.svg" alt="">
+         </div>
+       </div>
+     </section>
+
       <footer>
         <div class="footer-container">
-          <h1 class="title-footer">Dental Clinic</h1>
+          <div class="logo-name-footer">
+            <img src="./Images/Logowb.svg" alt="Logo">
+          </div>
 
           <ul>
             <li class="ul-header"><a href="#">Shërbimet</a></li>
@@ -209,46 +209,18 @@
             <li class="ul-header">Kontakti</li>
             <li>
               <div class="adress-div">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="footer-icon"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
+                <ion-icon name="mail"></ion-icon>
                 Prishtinë, 10000 , Kosovë
               </div>
             </li>
             <li>
               <div class="location-div">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="footer-icon"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-
-                info@dentalclinic.com
+                <ion-icon name="location"></ion-icon> info@dentalclinic.com
+              </div>
+            </li>
+            <li>
+              <div class="phone-div">
+                <ion-icon name="call"></ion-icon> +383 49 400 400
               </div>
             </li>
           </ul>
