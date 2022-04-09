@@ -44,7 +44,7 @@
   background: #838282; */
   border-radius: 0.5rem;
   color: white;
-  max-width: 580px;
+  width: 580px;
   height: 420px;
 }
 .text-block h2 {
@@ -57,6 +57,19 @@
   width: 450px;
   padding-left: 12%;
   line-height: 1.5;
+}
+@media only screen and (max-width: 1300px) {
+  .text-block {
+    position: absolute;
+    left: 24px;
+    top: 120px;
+    /* background: rgb(0, 0, 0);
+    background: #838282; */
+    border-radius: 0.5rem;
+    color: white;
+    width: 500px;
+    height: 350px;
+  }
 }
 .buton-header-div{
   display: flex;
