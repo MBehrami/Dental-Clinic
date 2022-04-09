@@ -88,7 +88,7 @@
   box-shadow: inset 200px 0 0 0 #fff;
 }
 .picture {
-  width: 100%;
+  max-width: 100%;
   /* height: 100vh; */
 }
 .all-termin {
@@ -248,7 +248,7 @@
   color: #fff;
   background-color: #499aa0;
   border: none;
-  border-radius: 15px;
+  border-radius: 0.5rem;
 }
 .second-button:hover {
   color: black;
@@ -357,7 +357,7 @@
 }
 .calltoAction-img {
   max-width: 100%;
-  height: 80vh;
+  height: 70vh;
 }
 /****CALL TO ACTION END*****/
 
@@ -380,12 +380,8 @@ footer {
   display: flex;
   justify-content: center;
 }
-.title-footer {
-  text-transform: uppercase;
-  color: white;
-
-  position: relative;
-  top: 40px;
+.logo-name-footer img{
+  height: 80%;
 }
 
 .footer-end {
@@ -423,7 +419,6 @@ ul li {
 .copyright-text {
   text-align: center;
 
-  position: absolute;
-  bottom: 8px;
-  transform: translate(50%, 0);
+  position: relative;
+  top: 20px;
 }
