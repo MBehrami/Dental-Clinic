@@ -1,17 +1,15 @@
-
 .nav {
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
   gap: 24px;
 }
-.logo{
+.logo {
   position: relative;
   left: 1.2rem;
   height: 5.2rem;
 }
-.navbar{
-  
+.navbar {
   position: relative;
   right: 1.2rem;
 }
@@ -23,16 +21,16 @@
   text-decoration: none;
   border-bottom: 4px solid currentColor;
 }
-.reservation{
+.reservation {
   padding: 0.4rem;
   color: white !important;
   border-radius: 0.4rem;
   transition: all 0.5s;
 }
-.reservation-first{
+.reservation-first {
   background-color: #458589;
 }
-.reservation:hover{
+.reservation:hover {
   background-color: #5cb1b6;
   border-bottom: none !important;
 }
@@ -58,20 +56,8 @@
   padding-left: 12%;
   line-height: 1.5;
 }
-@media only screen and (max-width: 1300px) {
-  .text-block {
-    position: absolute;
-    left: 24px;
-    top: 120px;
-    /* background: rgb(0, 0, 0);
-    background: #838282; */
-    border-radius: 0.5rem;
-    color: white;
-    width: 500px;
-    height: 350px;
-  }
-}
-.buton-header-div{
+
+.buton-header-div {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -105,49 +91,44 @@
   width: 100%;
   /* height: 100vh; */
 }
-.all-termin{
+.all-termin {
   display: flex;
 }
-.container-terminet{
+.container-terminet {
   padding: 30px;
   display: inline-block;
 
   position: relative;
   left: 10%;
-  
 }
 
-.terminet-online{
-  padding:15px;
+.terminet-online {
+  padding: 15px;
   border: 1px solid;
   border-radius: 10px;
   font-size: 16px;
-
 }
-.termin-firstname-lastname{
+.termin-firstname-lastname {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
-.termin-tel-date{
+.termin-tel-date {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
-.lastname{
+.lastname {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.number{
-  
+.number {
   margin-bottom: 10px;
 }
-.date{
-  
+.date {
   margin-bottom: 10px;
-
 }
-.reasons{
+.reasons {
   width: 500px;
   height: 200px;
   margin-bottom: 10px;
@@ -155,7 +136,7 @@
 .terminet-picture {
   max-width: 100%;
   height: 100vh;
-  
+
   position: absolute;
   right: 0;
 }
@@ -164,7 +145,7 @@
 }
 .terminet h2 {
   font-size: 40px;
- }
+}
 .termin-button {
   display: inline-block;
   padding: 8px 18px;
@@ -173,13 +154,13 @@
   text-align: center;
   text-decoration: none;
   outline: none;
-  
+
   border: none;
   border-radius: 10px;
   margin-top: 70px;
   position: relative;
   bottom: 30px;
-  left:50px;
+  left: 50px;
   color: black;
   box-shadow: 0 0 0 2px #73dde4;
   background-color: white;
@@ -187,14 +168,12 @@
 .termin-button:hover {
   color: black;
   background-color: #73dde4;
-  
 }
 .second-section {
   margin: 0 auto;
 }
 .appointment {
   text-align: center;
-  
 }
 .appointment h2 {
   color: #545454;
@@ -215,40 +194,40 @@
   padding: 4.8rem 2.8rem;
   margin: 0 auto;
   text-align: center;
-  
 }
-.sherbimet{
+.sherbimet {
   box-shadow: 0px 2px 4px 0 #73dde4;
   border-radius: 15px;
   padding: 2.4rem 2.4rem;
   max-width: 16rem;
 }
-.sherbimet:hover{
+.sherbimet:hover {
   transform: scale(1.1);
 }
-.estetik{
+.estetik {
   grid-area: estetik;
 }
-.implantologji{
+.implantologji {
   grid-area: implantologji;
 }
-.ortodonci{
+.ortodonci {
   grid-area: ortodonci;
 }
-.veneers{
+.veneers {
   grid-area: veneers;
 }
-.pedodonci{
+.pedodonci {
   grid-area: pedodonci;
 }
-.endodonci{
+.endodonci {
   grid-area: endodonci;
 }
-.first-flex-services-svg{
+.first-flex-services-svg {
   width: 60px;
   stroke: #73dde4;
 }
-.first-flex-services p, .second-flex-services p{
+.first-flex-services p,
+.second-flex-services p {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -282,11 +261,11 @@
   top: 20px;
 }
 /***consult Start***/
-.consult{
+.consult {
   display: flex;
   justify-content: space-evenly;
 }
-.consult-picture-consult{
+.consult-picture-consult {
   width: 500px;
 }
 /***consult End***/
@@ -330,7 +309,7 @@
 }
 
 /****CALL TO ACTION START*****/
-.calltoAction{
+.calltoAction {
   margin-top: 8rem;
   background-color: #73dde4;
   border-bottom-right-radius: 30%;
@@ -340,27 +319,24 @@
 
   display: flex;
   justify-content: space-around;
-  
-
 }
-.calltoAction-text{
+.calltoAction-text {
   display: block;
-  
   padding: 2.4rem 2.4rem;
-
-  width: 18rem;
+  max-width: 26rem;
   justify-content: center;
   align-items: center;
-
+  position: relative;
+  left: 100px;
 }
-.calltoAction h2{
+.calltoAction h2 {
   font-size: 2.4rem;
 }
-.calltoAction p{
+.calltoAction p {
   font-size: 1.2rem;
   margin-top: 2rem;
 }
-.calltoAction-email-email{
+.calltoAction-email-email {
   width: 100%;
   padding: 10px 0;
   background: none;
@@ -369,16 +345,19 @@
   color: #545454;
   font-size: 1.2rem;
   outline: none;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
-.calltoAction-button{
+.calltoAction-button {
   text-decoration: none;
   position: relative;
-  top: 1rem;
+  top: 2rem;
 }
-.calltoAction-img{
-  width: 100%;
-  height: 100vh;
+.call-to-action-mobile-phone{
+  margin-top: 3.5rem !important;
+}
+.calltoAction-img {
+  max-width: 100%;
+  height: 80vh;
 }
 /****CALL TO ACTION END*****/
 
@@ -406,7 +385,7 @@ footer {
   color: white;
 
   position: relative;
-  top:40px;
+  top: 40px;
 }
 
 .footer-end {

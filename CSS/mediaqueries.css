@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1300px) {
+    .text-block{
+        margin: 0 auto;
+      left: 20px;
+      top: 110px;
+      width: 500px;
+      height: 350px;
+      text-align: center;
+    }
+    .text-block h2{
+        margin-left: 3.2rem;
+    }
+    .first-button.reservation-first{
+        margin-left: 3.2rem;
+    }
+}
+@media only screen and (max-width:1224px){
+    .text-block{
+        left: 20px;
+        top: 90px;
+        width: 450px;
+        height: 300px;
+      }
+}
