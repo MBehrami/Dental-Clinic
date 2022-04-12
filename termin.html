@@ -12,7 +12,7 @@
         />
         <title>Ordinanca</title>
       </head>
-<body>
+
     <header>
       <div class="logo-name">
         <img class = "logo"src="./Images/Logo.svg" alt="Logo">
@@ -22,7 +22,7 @@
             <li><a class = "menu" href="./index.html">Ballina</a></li>
             <li><a class = "menu" href="#">Galeria</a></li>
             <li><a class = "menu" href="#">Sherbimet tona</a></li>
-            <li><a class = "menu" href="#">Kontakti</a></li>
+            <li><a class = "menu" href="./kontakti.html">Kontakti</a></li>
             <li><a class = "menu reservation" href="http://127.0.0.1:5503/termin.html">Cakto termin</a></li>
           </ul>
 
@@ -30,9 +30,7 @@
         
       </header>
     <!-- Terminet -->
-    <section>
-        
-
+      <section>
         <div class = "all-termin">
             
 
@@ -40,40 +38,97 @@
               <div class="terminet">
                 <h2>Cakto terminin</h2>
               </div>
-              <div class = "termin-firstname-lastname">
-                <div class =  "name">
-                     <input class = "terminet-online name"type="text" id="fname" name="firstname" placeholder="Emri..">
-                </div>
-                <div class =  "lastname">
-                    <input class = "terminet-online " type="text" placeholder="Mbiemri.." />
+              <form class="reservation-form" action="#">
+                <div>
+                  <label for="full-name">Emri dhe Mbiemri</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    required
+                  />
                 </div>
 
-              </div>
-              <div class="termin-tel-date">
-                <div class =  "number">
-                  <input class = "terminet-online " type="tel" placeholder="Nr. kontaktues.." />
-              </div>
-              <div class =  "date">
-                  <input class = "terminet-online " type="datetime-local" placeholder="Data.." />
-              </div>
-              </div>
+                <div>
+                  <label for="phone-number">Nr. Telefonit</label>
+                  <input
+                    id="phone-number"
+                    type="number"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="date">Dita dhe ora</label>
+                  <input
+                    id="date"
+                    type="datetime-local"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="reason">Arsyeja e vizites</label>
+                  <input
+                    id="reason"
+                    type="text"
+                    required
+                  />
+                </div>
 
                 
-                <div class =  "reasons">
-                    <textarea class = "terminet-online reasons" placeholder="Arsyja e vizites.." style="height: 100px"></textarea>
-                    <a class="termin-button">Cakto Termin</a>
-                </div>
+
+                <button class="termin-button">Cakto Termin</button>
+              </form>
                 
             </div>
             
-
-            <img class="terminet-picture" src="./Images/footer/Termine.svg"alt="header" />
-       
+            <div class="img-test">
+              <img src="./Images/FormReservation2.svg" alt="Form reservation">
+            </div> 
+            
         </div>
-        
-
-       
       </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="logo-name-footer">
+            <img src="./Images/Logowb.svg" alt="Logo">
+          </div>
+
+          <ul>
+            <li class="ul-header"><a href="#">Shërbimet</a></li>
+            <li>Protetike-Estetik</li>
+            <li>Implantologji</li>
+            <li>Veneers</li>
+            <li>Pedodonci</li>
+            <li>Endodonci</li>
+          </ul>
+
+          <ul>
+            <li class="ul-header">Kontakti</li>
+            <li>
+              <div class="adress-div">
+                <ion-icon name="mail"></ion-icon>
+                Prishtinë, 10000 , Kosovë
+              </div>
+            </li>
+            <li>
+              <div class="location-div">
+                <ion-icon name="location"></ion-icon> info@dentalclinic.com
+              </div>
+            </li>
+            <li>
+              <div class="phone-div">
+                <ion-icon name="call"></ion-icon> +383 49 400 470
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright-text">
+          <p>Copyright © 2022 - Muhamet Behrami - Dental Clinic - PBC Project</p>
+        </div>
+      </footer>
 
 </body>
 </html>
