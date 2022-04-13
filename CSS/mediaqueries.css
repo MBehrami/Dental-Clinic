@@ -18,8 +18,8 @@
 @media only screen and (max-width:1210px){
     
 .text-block {
-    top: 100px;
-    left: 0;
+    top: 88px;
+    left: -50px;
   }
   .text-block h2 {
     font-size: 2.0rem;
@@ -86,5 +86,83 @@
         width: 400px;
         line-height: 1.5;
       }
+}
+@media only screen and (max-width:967px){
+    .text-block {
+        top: 90px;
+      }
+      .text-block h2 {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+      .text-block p {
+        font-size: 1rem;
+        text-align: center;
+        width: 400px;
+        line-height: 1.5;
+      }
+    
+
+
+    
+}
+@media only screen and (max-width:900px){
+    /*Mobile-Button*/
+    .btn-mobile-nav{
+        display: block;
     }
+    .navbar{
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 86px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+        /* To hide mobile nav */
+        opacity: 0;
+        /* To make it unaccessible to mouse and keyboard */
+        pointer-events: none; 
+        /*To hide it from screen readers*/
+        visibility: none;
+
+                
+    }
+    .nav-open .navbar{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .nav-open .icon-mobile-nav[name = "close-outline"]{
+        display: block;
+    }   
+    .nav-open .icon-mobile-nav[name = "menu-outline"]{
+        display: none;
+    }   
+    .nav{
+        flex-direction: column;
+        gap:48px;
+
+        text-align: center;
+    }
+    .nav a:link,
+    .nav a:visited{
+        font-size: 18px;
+    }
+    .navbar{
+        z-index: 2;
+    }
+    .first-article{
+        z-index: 1;
+    }
+
+        
+}
+
     
