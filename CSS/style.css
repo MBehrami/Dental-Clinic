@@ -1,13 +1,5 @@
-.nav {
-  display: flex;
-  justify-content: center;
-  font-size: 1.2rem;
-  gap: 24px;
-
-}
-
+/****Navbar Start****/
 /*Mobile*/
-
 .btn-mobile-nav{
   border: none;
   background: none;
@@ -23,18 +15,27 @@
 .icon-mobile-nav[name = "close-outline"]{
   display: none;
 }
+/*Mobile End*/
+.nav {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  gap: 24px;
+
+}
 .logo {
   position: relative;
-  left: 1.2rem;
-  height: 5.2rem;
+  left: 1.6rem;
+  height: 8.0rem;
 }
 .navbar {
   position: relative;
-  right: 1.2rem;
+  right: 2.4rem;
 }
 .nav a {
   color: #545454;
   text-decoration: none;
+  font-size: 2rem;
 }
 .nav a:hover {
   text-decoration: none;
@@ -61,18 +62,16 @@
   background: #838282; */
   border-radius: 0.5rem;
   color: white;
-  width: 580px;
-  height: 420px;
+  width: 50rem;
+  height: 60rem;
 }
 .text-block h2 {
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   text-align: center;
 }
 .text-block p {
-  font-size: 1.4rem;
+  font-size: 2.0rem;
   text-align: center;
-  width: 450px;
-  padding-left: 12%;
   line-height: 1.5;
 }
 
@@ -85,7 +84,7 @@
 .first-button {
   display: inline-block;
   padding: 0.8rem;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
@@ -128,7 +127,7 @@
 
 .reservation-form label {
   display: block;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
@@ -139,9 +138,9 @@
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 2px solid #666;
-  color: #545454;
-  font-size: 1.2rem;
+  border-bottom:  0.2rem solid rgb(2, 2, 2);
+  color: #0c0b0b;
+  font-size: 2rem;
   outline: none;
   transition: border-color 0.2s;
 }
@@ -152,27 +151,25 @@
   position: absolute;
   right: 0;
 }
-.terminet {
-  text-align: center;
-}
 .terminet h2 {
-  font-size: 40px;
+  font-size: 4.4rem;
+  font-weight: 700;
 }
 .termin-button {
   display: inline-block;
-  padding: 4px 14px;
-  font-size: 18px;
+  padding: 0.4rem 1.4rem;
+  font-size: 2rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
 
   border: none;
-  border-radius: 10px;
-  margin-top: 70px;
+  border-radius: 0.4rem;
+  margin-top: 6rem;
   
   color: black;
-  box-shadow: 0 0 0 2px #73dde4;
+  box-shadow: 0 0 0 0.2rem #050505;
   background-color: white;
 }
 .termin-button:hover {
@@ -204,10 +201,10 @@
   padding-top: 5rem;
 }
 .contact-form-text h2{
-  font-size: 2rem;
+  font-size: 4.4rem;
 }
 .contact-form-text p{
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 .contact-form-button-number{
   display: flex;
@@ -221,15 +218,17 @@
   left: 44%;
 }
 /****Contact--End*********/
+
+/***Sherbimet Start***/
 .appointment {
   text-align: center;
 }
 .appointment h2 {
   color: #545454;
-  font-size: 40px;
+  font-size: 4rem;
 }
 .appointment p {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .first-flex-services {
@@ -239,16 +238,21 @@
   grid-template-areas:
     "estetik implantologji ortodonci"
     "veneers pedodonci endodonci";
-  gap: 42px;
+  gap: 4.2rem;
   padding: 4.8rem 2.8rem;
-  margin: 0 auto;
   text-align: center;
 }
+.first-flex-services h3{
+  font-size: 2rem;
+}
+.first-flex-services p{
+  font-size: 1.4rem;
+}
 .sherbimet {
-  box-shadow: 0px 2px 4px 0 #73dde4;
+  box-shadow: 0px 1px 2px 0 #2f393a;
   border-radius: 15px;
   padding: 2.4rem 2.4rem;
-  max-width: 16rem;
+  max-width: 24rem;
 }
 .sherbimet:hover {
   transform: scale(1.1);
@@ -272,19 +276,13 @@
   grid-area: endodonci;
 }
 .first-flex-services-svg {
-  width: 60px;
+  width: 6rem;
   stroke: #73dde4;
 }
 .first-flex-services p,
 .second-flex-services p {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-.second-flex-services {
-  max-width: 100%;
-  height: 250px;
-  display: flex;
-  text-align: center;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }
 .second-button {
   display: inline-block;
@@ -304,29 +302,24 @@
   box-shadow: 0 0 0 2px #73dde4;
   background-color: white;
 }
+/***Sherbimet End***/
+
+/***Gallery Start***/
 .second-section {
   max-width: 100%;
   position: relative;
-  top: 20px;
+  top: 2rem;
 }
-/***consult Start***/
-.consult {
-  display: flex;
-  justify-content: space-evenly;
-}
-.consult-picture-consult {
-  width: 500px;
-}
-/***consult End***/
-
 .gallery {
   text-align: center;
 }
 .gallery h2 {
-  font-size: 40px;
+  
+  color: #545454;
+  font-size: 4rem;
 }
 .gallery p {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .gallery-back {
   max-width: 100%;
@@ -335,7 +328,7 @@
   grid-template-areas:
     "picture2 picture4 picture3"
     "picture5 picture6 picture3";
-  gap: 5px;
+  gap: 0.5rem;
 }
 .pic {
   max-width: 100%;
@@ -356,6 +349,7 @@
 .picture6 {
   grid-area: picture6;
 }
+/***Gallery End***/
 
 /****CALL TO ACTION START*****/
 .calltoAction {
@@ -373,17 +367,17 @@
 .calltoAction-text {
   display: block;
   padding: 2.4rem 2.4rem;
-  max-width: 26rem;
+  max-width: 42rem;
   justify-content: center;
   align-items: center;
   position: relative;
   left: 100px;
 }
 .calltoAction h2 {
-  font-size: 2.4rem;
+  font-size: 4rem;
 }
 .calltoAction p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin-top: 2rem;
 }
 .calltoAction-email-email {
@@ -391,35 +385,40 @@
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 2px solid #666;
+  border-bottom: 0.2rem solid #666;
   color: #545454;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   outline: none;
   transition: border-color 0.2s;
 }
 .calltoAction-button {
   text-decoration: none;
   position: relative;
-  top: 2rem;
+  top: 2.4rem;
+  font-size: 1.8rem;
 }
 .call-to-action-mobile-phone{
-  margin-top: 3.5rem !important;
+  margin-top: 4.8rem !important;
+  font-size: 2rem;
+  font-weight: 600;
 }
 .calltoAction-img {
   max-width: 100%;
-  height: 70vh;
+  height: 60vh;
 }
 /****CALL TO ACTION END*****/
+
+/****Footer Start****/
 
 footer {
   background-color: #458589;
   color: #f1f3f5;
 
-  margin-top: 48px;
-  padding-top: 48px;
+  margin-top: 4.8rem;
+  padding-top: 4.8rem;
 
   position: relative;
-  top: 30px;
+  top: 3rem;
 }
 .footer-container {
   display: flex;
@@ -434,12 +433,13 @@ footer {
 }
 
 .footer-end {
-  margin-top: 32px;
+  margin-top: 3.2rem;
   text-align: center;
 }
 ul li {
   list-style: none;
-  margin-bottom: 4px;
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
 }
 .ul-header {
   margin-bottom: 24px;
@@ -467,4 +467,8 @@ ul li {
 }
 .copyright-text {
   text-align: center;
+  font-size: 1.4rem;
+
+  position: relative;
+  bottom: 0.4rem;
 }
