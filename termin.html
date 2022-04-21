@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./CSS/style.css" />
-        <link rel="stylesheet" href="./CSS/general.css" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400;1,600&display=swap"
-          rel="stylesheet"
-        />
-        <title>Ordinanca</title>
-      </head>
-
-    <header>
-      <div class="logo-name">
-        <img class = "logo"src="./Images/Logo.svg" alt="Logo">
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name = "description" content="Clinic Dental perben nje staf te kualifikuar dhe me pervoje te gjate ne fushen e stomatologjise."/>
+    <link rel="stylesheet" href="./CSS/general.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/mediaqueries.css" />
+    <link rel="preconnect" href="./https://fonts.googleapis.com">
+<link rel="preconnect" href="./https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+<script defer src="js/script.js"></script>
+<title>Ordinanca</title>
+  </head>
+  <body class="container">
+      <header class = "header">
+        <div class="logo-name">
+          <img class = "logo"src="./Images/Logo.svg" alt="Logo">
+        </div>
         <div class="navbar">
           <ul class = "nav">
-            <li><a class = "menu" href="./index.html">Ballina</a></li>
-            <li><a class = "menu" href="#">Galeria</a></li>
-            <li><a class = "menu" href="#">Sherbimet tona</a></li>
+            <li><a class = "menu" href="#">Ballina</a></li>
+            <li><a class = "menu" href="#galerija">Galeria</a></li>
+            <li><a class = "menu" href="#sherbime-tona-section">Sherbimet tona</a></li>
             <li><a class = "menu" href="./kontakti.html">Kontakti</a></li>
-            <li><a class = "menu reservation" href="http://127.0.0.1:5503/termin.html">Cakto termin</a></li>
+            <li><a class = "menu reservation reservation-first" href="./termin.html">Cakto termin</a></li>
           </ul>
 
         </div>
+
+        <button class = "btn-mobile-nav">
+          <ion-icon class = "icon-mobile-nav" name= "menu-outline"></ion-icon>
+          <ion-icon class = "icon-mobile-nav" name= "close-outline"></ion-icon>
+        </button>
         
       </header>
     <!-- Terminet -->
       <section>
-        <div class = "all-termin">
+
+        <div class="container w-50 h-100 ">
+          <div class="row">
+              <div class="col-offset-3 bg-info p-5 fs-3">
+                  <form>
+                      <div class="form-group">
+                          <label for="name" class = "form-label">Emri</label>
+                          <input type = "text" class = "form-control" id = "name" placeholder="Emri juaj">
+                      </div>
+                      <div class="form-group">
+                          <label for="name" class = "form-label">Mbiemri</label>
+                          <input type = "text" class = "form-control" id = "lastname" placeholder="Mbiemri juaj">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone-number" class = "form-label">Numri i telefonit</label>
+                        <input type = "tel" class = "form-control" id = "phone-number" placeholder="Numri i telefonit">
+                    </div>
+                      <div class="form-group">
+                          <label for="datetime-local" class = "form-label">Ora dhe Data</label>
+                          <input type = "datetime-local" class = "form-control" id = "name" placeholder="Ora dhe Data">
+                      </div>
+                      <div class="form-group">
+                          <label for="reason" class = "form-label">Arsyja e vizites</label>
+                          <input type = "text" class = "form-control" id = "reason" placeholder="Arsyja e vizites">
+                      </div>
+                      <div class="col-3 mt-4">
+                          <div class="btn btn-primary">Apliko</div>
+                      </div>
+                                            
+                  </form>
+              </div>
+          </div>
+      </div>
+        <!-- <div class = "all-termin">
             
 
             <div class="container-terminet">
@@ -87,7 +130,7 @@
             </div> 
             
         </div>
-      </section>
+      </section> -->
 
       <footer>
         <div class="footer-container">
@@ -129,6 +172,8 @@
           <p>Copyright © 2022 - Muhamet Behrami - Dental Clinic - PBC Project</p>
         </div>
       </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>

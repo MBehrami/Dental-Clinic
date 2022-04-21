@@ -159,6 +159,7 @@
     max-width: 100%;
     width: 60rem;
     height: 30rem;
+    margin-top: 2rem;
   }
   .picture{
     display: none;
@@ -167,6 +168,10 @@
     display: block;
     
     height: 40vh;
+  }
+  .appointment p{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .mobile-picture-div{
     display: flex;
@@ -226,6 +231,8 @@
     "picture4"
     "picture5" 
     "picture6";
+
+    padding: 1rem;
 
   }
   .calltoAction h2 {
