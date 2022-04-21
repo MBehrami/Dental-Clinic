@@ -4,176 +4,178 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name = "description" content="Clinic Dental perben nje staf te kualifikuar dhe me pervoje te gjate ne fushen e stomatologjise."/>
+    <meta
+      name="description"
+      content="Clinic Dental perben nje staf te kualifikuar dhe me pervoje te gjate ne fushen e stomatologjise."
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./CSS/general.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/mediaqueries.css" />
-    <link rel="preconnect" href="./https://fonts.googleapis.com">
-<link rel="preconnect" href="./https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
-<script defer src="js/script.js"></script>
-<title>Ordinanca</title>
+    <link rel="preconnect" href="./https://fonts.googleapis.com" />
+    <link rel="preconnect" href="./https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+    <title>Ordinanca</title>
   </head>
-  <body class="container">
-      <header class = "header">
-        <div class="logo-name">
-          <img class = "logo"src="./Images/Logo.svg" alt="Logo">
-        </div>
-        <div class="navbar">
-          <ul class = "nav">
-            <li><a class = "menu" href="#">Ballina</a></li>
-            <li><a class = "menu" href="#galerija">Galeria</a></li>
-            <li><a class = "menu" href="#sherbime-tona-section">Sherbimet tona</a></li>
-            <li><a class = "menu" href="./kontakti.html">Kontakti</a></li>
-            <li><a class = "menu reservation reservation-first" href="./termin.html">Cakto termin</a></li>
-          </ul>
-
-        </div>
-
-        <button class = "btn-mobile-nav">
-          <ion-icon class = "icon-mobile-nav" name= "menu-outline"></ion-icon>
-          <ion-icon class = "icon-mobile-nav" name= "close-outline"></ion-icon>
-        </button>
-        
-      </header>
-    <!-- Terminet -->
-      <section>
-
-        <div class="container w-50 h-100 ">
-          <div class="row">
-              <div class="col-offset-3 bg-info p-5 fs-3">
-                  <form>
-                      <div class="form-group">
-                          <label for="name" class = "form-label">Emri</label>
-                          <input type = "text" class = "form-control" id = "name" placeholder="Emri juaj">
-                      </div>
-                      <div class="form-group">
-                          <label for="name" class = "form-label">Mbiemri</label>
-                          <input type = "text" class = "form-control" id = "lastname" placeholder="Mbiemri juaj">
-                      </div>
-                      <div class="form-group">
-                        <label for="phone-number" class = "form-label">Numri i telefonit</label>
-                        <input type = "tel" class = "form-control" id = "phone-number" placeholder="Numri i telefonit">
-                    </div>
-                      <div class="form-group">
-                          <label for="datetime-local" class = "form-label">Ora dhe Data</label>
-                          <input type = "datetime-local" class = "form-control" id = "name" placeholder="Ora dhe Data">
-                      </div>
-                      <div class="form-group">
-                          <label for="reason" class = "form-label">Arsyja e vizites</label>
-                          <input type = "text" class = "form-control" id = "reason" placeholder="Arsyja e vizites">
-                      </div>
-                      <div class="col-3 mt-4">
-                          <div class="btn btn-primary">Apliko</div>
-                      </div>
-                                            
-                  </form>
-              </div>
-          </div>
+  <body>
+    <header class="header">
+      <div class="logo-name">
+        <img class="logo" src="./Images/Logo.svg" alt="Logo" />
       </div>
-        <!-- <div class = "all-termin">
-            
+      <div class="navbar">
+        <ul class="nav">
+          <li><a class="menu" href="#">Ballina</a></li>
+          <li><a class="menu" href="#galerija">Galeria</a></li>
+          <li>
+            <a class="menu" href="#sherbime-tona-section">Sherbimet tona</a>
+          </li>
+          <li><a class="menu" href="./kontakti.html">Kontakti</a></li>
+          <li>
+            <a class="menu reservation reservation-first" href="./termin.html"
+              >Cakto termin</a
+            >
+          </li>
+        </ul>
+      </div>
 
-            <div class="container-terminet">
-              <div class="terminet">
-                <h2>Cakto terminin</h2>
-              </div>
-              <form class="reservation-form" action="#">
-                <div>
-                  <label for="full-name">Emri dhe Mbiemri</label>
-                  <input
-                    id="full-name"
-                    type="text"
-                    required
-                  />
-                </div>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <!-- Terminet -->
 
-                <div>
-                  <label for="phone-number">Nr. Telefonit</label>
-                  <input
-                    id="phone-number"
-                    type="number"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label for="date">Dita dhe ora</label>
-                  <input
-                    id="date"
-                    type="datetime-local"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label for="reason">Arsyeja e vizites</label>
-                  <input
-                    id="reason"
-                    type="text"
-                    required
-                  />
-                </div>
-
-                
-
-                <button class="termin-button">Cakto Termin</button>
-              </form>
-                
-            </div>    
-            
-            <div class="img-test">
-              <img src="./Images/optimized-formReservation.png" alt="Form reservation">
-            </div> 
-            
+    <div class="container-md mt-5 col-md-8">
+      <form id="form-id-termin">
+        <div class="mb-4">
+          <label for="name" class="form-label">Emri</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            aria-describedby="Emri"
+            placeholder="emri"
+          />
         </div>
-      </section> -->
+        <div class="mb-4">
+          <label for="lastname" class="form-label">Mbiemri</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastname"
+            aria-describedby="Mbiemri"
+            placeholder="mbiemri"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="phone-number" class="form-label">Nr. Telefonit</label>
+          <input
+            type="number"
+            class="form-control"
+            id="phone-number"
+            aria-describedby="Nr. Telefonit"
+            placeholder="+383 49 400 470"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="time-date" class="form-label">Data dhe ora</label>
+          <input
+            type="datetime-local"
+            class="form-control"
+            id="time-date"
+            aria-describedby="Data dhe ora"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="form-control-example" class="form-label"
+            >Arsyja e vizites</label
+          >
+          <textarea
+            class="form-control"
+            id="form-control-example"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="select" class="form-label">Zgjedhni doktorin!</label>
+          <select
+            class="form-select form-control"
+            aria-label="Default select example"
+            id="select"
+          >
+            <option selected>Zgjedhe doktorin:</option>
+            <option value="1">Dr.Hasan Hyseni</option>
+            <option value="2">Dr.Bedri Hyseni</option>
+            <option value="3">Dr.Filan Fisteku</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-5">Apliko</button>
+      </form>
+    </div>
 
-      <footer>
-        <div class="footer-container">
-          <div class="logo-name-footer">
-            <img src="./Images/Logowb.svg" alt="Logo">
-          </div>
-
-          <ul>
-            <li class="ul-header"><a href="#">Shërbimet</a></li>
-            <li>Protetike-Estetik</li>
-            <li>Implantologji</li>
-            <li>Veneers</li>
-            <li>Pedodonci</li>
-            <li>Endodonci</li>
-          </ul>
-
-          <ul>
-            <li class="ul-header">Kontakti</li>
-            <li>
-              <div class="adress-div">
-                <ion-icon name="mail"></ion-icon>
-                Prishtinë, 10000 , Kosovë
-              </div>
-            </li>
-            <li>
-              <div class="location-div">
-                <ion-icon name="location"></ion-icon> info@dentalclinic.com
-              </div>
-            </li>
-            <li>
-              <div class="phone-div">
-                <ion-icon name="call"></ion-icon> +383 49 400 470
-              </div>
-            </li>
-          </ul>
+    <footer>
+      <div class="footer-container">
+        <div class="logo-name-footer">
+          <img src="./Images/Logowb.svg" alt="Logo" />
         </div>
 
-        <div class="copyright-text">
-          <p>Copyright © 2022 - Muhamet Behrami - Dental Clinic - PBC Project</p>
-        </div>
-      </footer>
+        <ul>
+          <li class="ul-header"><a href="#">Shërbimet</a></li>
+          <li>Protetike-Estetik</li>
+          <li>Implantologji</li>
+          <li>Veneers</li>
+          <li>Pedodonci</li>
+          <li>Endodonci</li>
+        </ul>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <ul>
+          <li class="ul-header">Kontakti</li>
+          <li>
+            <div class="adress-div">
+              <ion-icon name="mail"></ion-icon>
+              Prishtinë, 10000 , Kosovë
+            </div>
+          </li>
+          <li>
+            <div class="location-div">
+              <ion-icon name="location"></ion-icon> info@dentalclinic.com
+            </div>
+          </li>
+          <li>
+            <div class="phone-div">
+              <ion-icon name="call"></ion-icon> +383 49 400 470
+            </div>
+          </li>
+        </ul>
+      </div>
 
-</body>
+      <div class="copyright-text">
+        <p>Copyright © 2022 - Muhamet Behrami - Dental Clinic - PBC Project</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
