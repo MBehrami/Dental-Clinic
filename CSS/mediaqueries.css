@@ -5,7 +5,7 @@
   }
   .text-block{
     margin: 0 auto;
-    top: 110px;
+    top: 100px;
     text-align: center;
   }
   .first-button.reservation-first{
@@ -33,9 +33,6 @@
   .text-block{
     top: 70px;
   }
-  .calltoAction {
-    justify-content: space-between;
-  }
 }
 @media only screen and (max-width: 960px) {
   
@@ -46,6 +43,9 @@
 }
 
 @media only screen and (max-width:900px){
+  html{
+    font-size: 49.5%;
+  }
     /*Mobile-Button*/
     .btn-mobile-nav{
         display: block;
@@ -53,7 +53,7 @@
     .navbar{
         background-color: rgba(255, 255, 255, 0.97);
         position: absolute;
-        top: 86px;
+        top: 64px;
         left: 0;
         width: 100%;
         height: 100vh;
@@ -103,5 +103,141 @@
 
         
 }
+@media only screen and (max-width:881px){
+  .text-block {
+    left: 0px;
+    top: 57px;
+  }
+}
+@media only screen and (max-width:841px){
+  .text-block {
+    left: -11px;
+    top: 57px;
+  }
+  .text-block h2{
+    font-size: 3.0rem;
+  }
+  .text-block p {
+    font-size: 2.0rem;
+  }
+  .first-button.reservation-first {
+    margin-left:0.2rem;
+  }
+}
 
+@media only screen and (max-width:841px){
+  .calltoAction-img{
+    display: none;
+  }
+  .logo-name-footer img {
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width:841px){
+  .text-block {
+    left: -11px;
+    top: 57px;
+  }
+  .text-block h2{
+    font-size: 3.0rem;
+  }
+  .text-block p {
+    font-size: 2.0rem;
+  }
+  .first-button.reservation-first {
+    margin-left: 0.2rem;
+    font-size: 2.0rem;
+  }
+}
+
+@media only screen and (max-width:760px){
+  .text-block {
+    position: static;
+    display: block;
+    color: #333;
+    max-width: 100%;
+    width: 60rem;
+    height: 30rem;
+  }
+  .picture{
+    display: none;
+  }
+  .mobile-picture{
+    display: block;
     
+    height: 40vh;
+  }
+  .mobile-picture-div{
+    display: flex;
+    justify-content: center;
+  }
+  .more-button{
+    background-color: grey;
+  }
+  .first-flex-services p{
+    display: none;
+  }
+  .second-button{
+    margin-top: 3rem;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width:687px){
+  .first-flex-services {
+    grid-template-areas:
+        "estetik implantologji "
+        "veneers pedodonci "
+        "ortodonci endodonci";
+  }
+  .picture3{
+    display: none;
+  }
+  .gallery-back{
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+        "picture2 picture4 "
+        "picture5 picture6 ";
+  }
+  .calltoAction-text{
+    left: 10px;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width:439px){
+  .logo{
+    height: 7rem;
+  }
+  .first-flex-services {
+    grid-template-areas:
+        "estetik" 
+        "implantologji "
+        "veneers" 
+        "pedodonci "
+        "ortodonci" 
+        "endodonci";
+  }
+  .gallery-back{
+    grid-template-columns:1fr ;
+    grid-template-areas:
+    "picture2" 
+    "picture4"
+    "picture5" 
+    "picture6";
+
+  }
+  .calltoAction h2 {
+    font-size: 3rem;
+  }
+  .calltoAction p {
+    font-size: 1.4rem;
+}
+}
+
+@media only screen and (max-width:331px){
+  .mobile-picture-div{
+    margin-top: 1rem;
+  }
+}
